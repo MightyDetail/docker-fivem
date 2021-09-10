@@ -1,7 +1,7 @@
 [hub]: https://hub.docker.com/r/mightydetail/fivem
 [git]: https://github.com/Andruida/fivem
 
-# [henkallsn/fivem_esx_bundle][hub] <img align="right" height="250px" src="https://portforward.com/fivem/fivem-logo.png">
+# [mightydetail/docker-fivem][hub] <img align="right" height="250px" src="https://portforward.com/fivem/fivem-logo.png">
 
 This docker image allows you to run a server for FiveM, a modded GTA multiplayer program.
 This image includes [txAdmin](https://github.com/tabarra/txAdmin), an in-browser server management software.
