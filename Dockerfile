@@ -1,5 +1,5 @@
-ARG FIVEM_NUM=4410
-ARG FIVEM_VER=4410-8b6caa32dec724c7c0a2fd0236a30b241b41a675
+ARG FIVEM_NUM=4494
+ARG FIVEM_VER=4494-7a20fa00d11bb1c3a0422e28ca2e4b386f5c829d
 ARG DATA_VER=b907aa74e2826e363979332ac21b9ad98cd82aa1
 FROM alpine as builder
 ARG FIVEM_VER
@@ -15,7 +15,7 @@ RUN wget -O- http://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/$
  && wget -O- http://github.com/citizenfx/cfx-server-data/archive/${DATA_VER}.tar.gz \
         | tar xz --strip-components=1 -C opt/cfx-server-data \
     \
- && apk -p $PWD add tini mariadb-dev tzdata
+ && apk -p $PWD add tini mariadb-client tzdata
 
 ADD entrypoint usr/bin/entrypoint
 RUN chmod +x /output/usr/bin/entrypoint
